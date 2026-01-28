@@ -22,6 +22,14 @@
     --text-color: #1A1A1A;         /* Deep Black */
     --accent-color: #5C4A1D;       /* Dark Bronze */
 }
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --primary-color: #FAF7F2;      /* Light Ivory for dark mode */
+    --secondary-color: #C9A227;    /* Same Metallic Gold */
+    --background-color: #0F0F0F;   /* Jet Black for background */
+    --text-color: #FAF7F2;         /* Light Ivory for text */
+    --accent-color: #8B7355;       /* Lighter Bronze for dark mode */
+}
 
 /* Base Styles */
 * {
@@ -1079,6 +1087,73 @@ p {
         text-align: center;
         font-size: 0.875rem;
     }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(201, 162, 39, 0.1);
+    transform: rotate(180deg);
+}
+
+/* Dark Mode Specific Styles */
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .testimonial-card,
+[data-theme="dark"] .pricing-card,
+[data-theme="dark"] .blog-card,
+[data-theme="dark"] .stat-card {
+    background-color: #1A1A1A;
+    color: var(--text-color);
+    border: 1px solid rgba(250, 247, 242, 0.1);
+}
+
+[data-theme="dark"] .form-control {
+    background-color: #1A1A1A;
+    border-color: rgba(250, 247, 242, 0.2);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-control:focus {
+    border-color: var(--secondary-color);
+    background-color: #1A1A1A;
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background-color: #1A1A1A;
+    border: 1px solid rgba(250, 247, 242, 0.1);
+}
+
+[data-theme="dark"] .navbar-nav {
+    background-color: var(--primary-color);
+}
+
+[data-theme="dark"] .sidebar {
+    background-color: #1A1A1A;
+}
+
+[data-theme="dark"] .map-container {
+    background-color: #1A1A1A;
+}
+
+/* Smooth transition for theme switching */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 /* Animation Classes */
