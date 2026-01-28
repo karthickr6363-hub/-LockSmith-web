@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Security Tips & Guides | LockSmith Pro</title>
+    <meta name="description" content="Expert security tips, smart lock guides, car security advice, and home safety recommendations from professional locksmiths at LockSmith Pro.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-lock"></i> LockSmith Pro
+            </a>
+            <ul class="navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="areas.html">Areas</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html" class="text-yellow-400">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Account</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dashboard.html">User Dashboard</a></li>
+                        <li><a href="admin.html">Admin Dashboard</a></li>
+                    </ul>
+                </li>
+                <li><a href="register.html" class="btn-signup">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div data-aos="fade-up">
+                <h1>Security Blog</h1>
+                <p>Expert tips, guides, and advice from professional locksmiths to keep your home, business, and vehicle secure.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="book.html" class="btn-emergency">
+                        <i class="fas fa-shield-alt"></i> Get Security Assessment
+                    </a>
+                    <a href="contact.html" class="btn-primary">
+                        <i class="fas fa-phone-alt"></i> Ask an Expert
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Browse by Category</h2>
+                <p>Find the security information you need</p>
+            </div>
+            
+            <div class="grid grid-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Safety</h3>
+                    <p>Tips for securing your home and family</p>
+                </div>
+                
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Smart Locks</h3>
+                    <p>Guides for modern security technology</p>
+                </div>
+                
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Car Security</h3>
+                    <p>Vehicle protection and key security</p>
+                </div>
+                
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Business Security</h3>
+                    <p>Commercial security solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Featured Articles</h2>
+                <p>Our most popular security guides and tips</p>
+            </div>
+            
+            <div class="grid grid-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://picsum.photos/seed/blog1/400/250.jpg" alt="Smart Lock Guide" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="blog-content">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Smart Locks</span>
+                            <span class="text-gray-500 text-sm ml-2">5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Complete Guide to Smart Lock Installation</h3>
+                        <p class="text-gray-600 mb-4">Everything you need to know about upgrading to smart locks, from choosing the right system to installation tips.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://picsum.photos/seed/author1/30/30.jpg" alt="Author" class="rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Mike Johnson</span>
+                            </div>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://picsum.photos/seed/blog2/400/250.jpg" alt="Home Security" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="blog-content">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Home Safety</span>
+                            <span class="text-gray-500 text-sm ml-2">7 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">10 Essential Home Security Tips</h3>
+                        <p class="text-gray-600 mb-4">Professional locksmith advice on how to secure your home effectively without breaking the bank.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://picsum.photos/seed/author2/30/30.jpg" alt="Author" class="rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Sarah Davis</span>
+                            </div>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://picsum.photos/seed/blog3/400/250.jpg" alt="Car Security" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="blog-content">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Car Security</span>
+                            <span class="text-gray-500 text-sm ml-2">6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Protecting Your Car from Modern Theft Methods</h3>
+                        <p class="text-gray-600 mb-4">Learn about the latest car theft techniques and how to protect your vehicle with modern security measures.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://picsum.photos/seed/author3/30/30.jpg" alt="Author" class="rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Tom Wilson</span>
+                            </div>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Recent Articles</h2>
+                <p>Latest security tips and industry insights</p>
+            </div>
+            
+            <div class="grid grid-2 gap-8" data-aos="fade-up" data-aos-delay="100">
+                <div class="space-y-6">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="flex">
+                            <img src="https://picsum.photos/seed/blog4/200/150.jpg" alt="Master Key Systems" class="w-48 h-32 object-cover">
+                            <div class="p-6 flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Business</span>
+                                    <span class="text-gray-500 text-sm ml-2">4 min read</span>
+                                </div>
+                                <h3 class="text-lg font-semibold mb-2">Master Key Systems for Small Businesses</h3>
+                                <p class="text-gray-600 mb-3">How master key systems can improve security and convenience for your business.</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">2 days ago</span>
+                                    <a href="#" class="text-yellow-500 hover:text-yellow-600">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="flex">
+                            <img src="https://picsum.photos/seed/blog5/200/150.jpg" alt="Emergency Preparedness" class="w-48 h-32 object-cover">
+                            <div class="p-6 flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Emergency</span>
+                                    <span class="text-gray-500 text-sm ml-2">3 min read</span>
+                                </div>
+                                <h3 class="text-lg font-semibold mb-2">What to Do During a Lockout Emergency</h3>
+                                <p class="text-gray-600 mb-3">Step-by-step guide for handling lockout situations safely and efficiently.</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">3 days ago</span>
+                                    <a href="#" class="text-yellow-500 hover:text-yellow-600">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="flex">
+                            <img src="https://picsum.photos/seed/blog6/200/150.jpg" alt="Safe Maintenance" class="w-48 h-32 object-cover">
+                            <div class="p-6 flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Safe Security</span>
+                                    <span class="text-gray-500 text-sm ml-2">5 min read</span>
+                                </div>
+                                <h3 class="text-lg font-semibold mb-2">Safe Maintenance and Security Tips</h3>
+                                <p class="text-gray-600 mb-3">Keep your valuables secure with proper safe maintenance and security practices.</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">5 days ago</span>
+                                    <a href="#" class="text-yellow-500 hover:text-yellow-600">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="space-y-6">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="flex">
+                            <img src="https://picsum.photos/seed/blog7/200/150.jpg" alt="Key Duplication" class="w-48 h-32 object-cover">
+                            <div class="p-6 flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Home Safety</span>
+                                    <span class="text-gray-500 text-sm ml-2">4 min read</span>
+                                </div>
+                                <h3 class="text-lg font-semibold mb-2">When and Why to Rekey Your Locks</h3>
+                                <p class="text-gray-600 mb-3">Understanding the importance of rekeying locks for home security.</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">1 week ago</span>
+                                    <a href="#" class="text-yellow-500 hover:text-yellow-600">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="flex">
+                            <img src="https://picsum.photos/seed/blog8/200/150.jpg" alt="Access Control" class="w-48 h-32 object-cover">
+                            <div class="p-6 flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Business</span>
+                                    <span class="text-gray-500 text-sm ml-2">6 min read</span>
+                                </div>
+                                <h3 class="text-lg font-semibold mb-2">Access Control Systems Explained</h3>
+                                <p class="text-gray-600 mb-3">Modern access control solutions for businesses of all sizes.</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">1 week ago</span>
+                                    <a href="#" class="text-yellow-500 hover:text-yellow-600">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="flex">
+                            <img src="https://picsum.photos/seed/blog9/200/150.jpg" alt="Window Security" class="w-48 h-32 object-cover">
+                            <div class="p-6 flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Home Safety</span>
+                                    <span class="text-gray-500 text-sm ml-2">5 min read</span>
+                                </div>
+                                <h3 class="text-lg font-semibold mb-2">Window Security: Often Overlooked but Critical</h3>
+                                <p class="text-gray-600 mb-3">Don't forget about window security in your home protection plan.</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">2 weeks ago</span>
+                                    <a href="#" class="text-yellow-500 hover:text-yellow-600">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section bg-yellow-500">
+        <div class="container">
+            <div class="max-w-2xl mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-black mb-4">Stay Updated with Security Tips</h2>
+                <p class="text-black text-xl mb-6">Get the latest security advice and industry insights delivered to your inbox</p>
+                <form class="flex flex-col sm:flex-row gap-4" onsubmit="subscribeNewsletter(event)">
+                    <input type="email" placeholder="Enter your email address" class="flex-1 px-4 py-3 rounded-lg border-0" required>
+                    <button type="submit" class="btn-emergency bg-black text-yellow-500 hover:bg-gray-800">
+                        <i class="fas fa-envelope"></i> Subscribe
+                    </button>
+                </form>
+                <p class="text-black text-sm mt-4">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Popular Topics</h2>
+                <p>Explore our most-read security guides</p>
+            </div>
+            
+            <div class="grid grid-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-yellow-500 mb-2">15</div>
+                    <h4 class="font-semibold">Home Security Articles</h4>
+                    <p class="text-sm text-gray-600">Comprehensive guides</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-yellow-500 mb-2">12</div>
+                    <h4 class="font-semibold">Smart Lock Guides</h4>
+                    <p class="text-sm text-gray-600">Modern security tech</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-yellow-500 mb-2">8</div>
+                    <h4 class="font-semibold">Car Security Tips</h4>
+                    <p class="text-sm text-gray-600">Vehicle protection</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-yellow-500 mb-2">10</div>
+                    <h4 class="font-semibold">Business Security</h4>
+                    <p class="text-sm text-gray-600">Commercial solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Contributors -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Security Experts</h2>
+                <p>Learn from certified locksmith professionals</p>
+            </div>
+            
+            <div class="grid grid-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-center">
+                    <img src="https://picsum.photos/seed/expert1/100/100.jpg" alt="Mike Johnson" class="w-20 h-20 rounded-full mx-auto mb-3">
+                    <h4 class="font-semibold">Mike Johnson</h4>
+                    <p class="text-sm text-gray-600">Senior Technician</p>
+                    <p class="text-xs text-gray-500 mt-2">15+ years experience</p>
+                    <p class="text-xs text-yellow-500 mt-1">23 articles</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://picsum.photos/seed/expert2/100/100.jpg" alt="Sarah Davis" class="w-20 h-20 rounded-full mx-auto mb-3">
+                    <h4 class="font-semibold">Sarah Davis</h4>
+                    <p class="text-sm text-gray-600">Smart Lock Specialist</p>
+                    <p class="text-xs text-gray-500 mt-2">10+ years experience</p>
+                    <p class="text-xs text-yellow-500 mt-1">18 articles</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://picsum.photos/seed/expert3/100/100.jpg" alt="Tom Wilson" class="w-20 h-20 rounded-full mx-auto mb-3">
+                    <h4 class="font-semibold">Tom Wilson</h4>
+                    <p class="text-sm text-gray-600">Automotive Expert</p>
+                    <p class="text-xs text-gray-500 mt-2">8+ years experience</p>
+                    <p class="text-xs text-yellow-500 mt-1">15 articles</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://picsum.photos/seed/expert4/100/100.jpg" alt="Emily Chen" class="w-20 h-20 rounded-full mx-auto mb-3">
+                    <h4 class="font-semibold">Emily Chen</h4>
+                    <p class="text-sm text-gray-600">Security Consultant</p>
+                    <p class="text-xs text-gray-500 mt-2">12+ years experience</p>
+                    <p class="text-xs text-yellow-500 mt-1">12 articles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-yellow-500">
+        <div class="container text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-black">Need Professional Security Advice?</h2>
+                <p class="text-black text-xl mb-6">Our experts are here to help with personalized security solutions</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="book.html" class="btn-emergency bg-black text-yellow-500 hover:bg-gray-800">
+                        <i class="fas fa-shield-alt"></i> Schedule Security Assessment
+                    </a>
+                    <a href="tel:+1-800-LOCKSMITH" class="btn-secondary border-black text-black hover:bg-black hover:text-yellow-500">
+                        <i class="fas fa-phone-alt"></i> Talk to an Expert
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-yellow-400">LockSmith Pro</h4>
+                <p>Your trusted 24/7 emergency locksmith service. Licensed, insured, and committed to your security.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-linkedin text-xl"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="services.html" class="text-white hover:text-yellow-400">Services</a></li>
+                    <li><a href="pricing.html" class="text-white hover:text-yellow-400">Pricing</a></li>
+                    <li><a href="areas.html" class="text-white hover:text-yellow-400">Service Areas</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-yellow-400">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Blog Categories</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-white hover:text-yellow-400">Home Safety</a></li>
+                    <li><a href="#" class="text-white hover:text-yellow-400">Smart Locks</a></li>
+                    <li><a href="#" class="text-white hover:text-yellow-400">Car Security</a></li>
+                    <li><a href="#" class="text-white hover:text-yellow-400">Business Security</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Contact Info</h4>
+                <ul class="space-y-2">
+                    <li><i class="fas fa-phone"></i> 1-800-LOCKSMITH</li>
+                    <li><i class="fas fa-envelope"></i> info@locksmithpro.com</li>
+                    <li><i class="fas fa-clock"></i> 24/7 Emergency Service</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Nationwide Service</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 LockSmith Pro. All rights reserved. | Licensed & Insured</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Newsletter Subscription
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            alert('Thank you for subscribing! You\'ll receive our latest security tips and advice at ' + email);
+            event.target.reset();
+        }
+
+        // Blog Search (if implemented)
+        function searchBlog() {
+            // Implementation for blog search functionality
+            console.log('Searching blog...');
+        }
+    </script>
+</body>
+</html>

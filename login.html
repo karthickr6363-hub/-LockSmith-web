@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LockSmith Pro | Customer Portal</title>
+    <meta name="description" content="Login to your LockSmith Pro account to manage appointments, view service history, and track technician status.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   
+
+
+    <!-- Login Form -->
+    <section class="section">
+        <div class="container">
+            <div class="max-w-md mx-auto" data-aos="fade-up">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-center mb-6">
+                        <a href="index.html" class="text-2xl font-bold text-black hover:text-yellow-500 transition-colors duration-300">
+                            <i class="fas fa-lock text-yellow-500 mr-2"></i> LockSmith Pro
+                        </a>
+                        <p class="text-gray-600">Sign in to manage your account</p>
+                    </div>
+                    
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="relative">
+                                <i class="fas fa-envelope absolute left-3 top-3 text-gray-400"></i>
+                                <input type="email" id="email" name="email" class="form-control pl-10" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="relative">
+                                <i class="fas fa-lock absolute left-3 top-3 text-gray-400"></i>
+                                <input type="password" id="password" name="password" class="form-control pl-10" placeholder="Enter your password" required>
+                                <button type="button" class="absolute right-3 top-3 text-gray-400 hover:text-yellow-500" onclick="togglePassword()">
+                                    <i class="fas fa-eye" id="passwordToggle"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-6">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="remember" class="mr-2">
+                                <span class="text-sm">Remember me</span>
+                            </label>
+                            <a href="#" class="text-sm text-yellow-500 hover:text-yellow-600">Forgot Password?</a>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full mb-4">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </button>
+                        
+                        <div class="text-center">
+                            <p class="text-gray-600">Don't have an account? <a href="register.html" class="text-yellow-500 hover:text-yellow-600">Register here</a></p>
+                        </div>
+                    </form>
+                    
+                    <!-- Social Login -->
+                    <div class="mt-6">
+                        <div class="relative">
+                            <div class="absolute inset-0 flex items-center">
+                                <div class="w-full border-t border-gray-300"></div>
+                            </div>
+                            <div class="relative flex justify-center text-sm">
+                                <span class="px-2 bg-white text-gray-500">Or continue with</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 flex flex-row gap-3 justify-center">
+                            <button type="button" class="btn-secondary border-gray-300 text-gray-700 hover:bg-gray-50">
+                                <i class="fab fa-google mr-2"></i> Google
+                            </button>
+                            <button type="button" class="btn-secondary border-gray-300 text-gray-700 hover:bg-gray-50">
+                                <i class="fab fa-facebook mr-2"></i> Facebook
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Emergency Access -->
+                <div class="bg-red-50 rounded-lg p-6 mt-6 text-center">
+                    <h3 class="text-lg font-semibold text-red-800 mb-2">Need Emergency Service?</h3>
+                    <p class="text-red-600 mb-4">Don't wait! Call us now for immediate assistance</p>
+                    <a href="tel:+1-800-LOCKSMITH" class="btn-emergency">
+                        <i class="fas fa-phone-alt"></i> Emergency: 1-800-LOCKSMITH
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Toggle Password Visibility
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const passwordToggle = document.getElementById('passwordToggle');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                passwordToggle.classList.remove('fa-eye');
+                passwordToggle.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                passwordToggle.classList.remove('fa-eye-slash');
+                passwordToggle.classList.add('fa-eye');
+            }
+        }
+
+        // Login Form Submission
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Simple validation (in real app, this would be server-side)
+            if (email && password) {
+                // Simulate successful login
+                alert('Login successful! Redirecting to dashboard...');
+                setTimeout(() => {
+                    window.location.href = 'dashboard.html';
+                }, 1000);
+            } else {
+                alert('Please enter both email and password');
+            }
+        });
+
+        // Social Login Handlers
+        document.querySelectorAll('button[type="button"]').forEach(button => {
+            if (button.textContent.includes('Google') || button.textContent.includes('Facebook')) {
+                button.addEventListener('click', function() {
+                    alert('Social login integration would be implemented here');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

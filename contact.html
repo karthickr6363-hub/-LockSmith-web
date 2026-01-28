@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - 24/7 Locksmith Service</title>
+    <meta name="description" content="Contact LockSmith Pro for 24/7 emergency locksmith services. Call, email, or visit our location for fast professional locksmith help.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-lock"></i> LockSmith Pro
+            </a>
+            <ul class="navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="areas.html">Areas</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html" class="text-yellow-400">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Account</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dashboard.html">User Dashboard</a></li>
+                        <li><a href="admin.html">Admin Dashboard</a></li>
+                    </ul>
+                </li>
+                <li><a href="register.html" class="btn-signup">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div data-aos="fade-up">
+                <h1>Contact Us</h1>
+                <p>Get in touch for 24/7 emergency locksmith service or to schedule an appointment</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="tel:+1-800-LOCKSMITH" class="btn-emergency">
+                        <i class="fas fa-phone-alt"></i> Emergency: 1-800-LOCKSMITH
+                    </a>
+                    <a href="https://wa.me/18007625743" class="btn-primary bg-green-500 hover:bg-green-600">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3" data-aos="fade-up">
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p class="text-2xl font-bold text-yellow-500 mb-4">1-800-LOCKSMITH</p>
+                    <p>24/7 Emergency Service Available</p>
+                    <p class="text-sm text-gray-600 mt-2">Average response time: 15-30 minutes</p>
+                </div>
+                
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p class="text-2xl font-bold text-green-500 mb-4">+1 (800) 762-5743</p>
+                    <p>Send photos and get instant quotes</p>
+                    <p class="text-sm text-gray-600 mt-2">Available 24/7</p>
+                </div>
+                
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p class="text-lg font-bold text-yellow-500 mb-4">info@locksmithpro.com</p>
+                    <p>Non-emergency inquiries</p>
+                    <p class="text-sm text-gray-600 mt-2">Response within 24 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="grid grid-2" data-aos="fade-up">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="(555) 123-4567" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Type</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="">Select Service</option>
+                                <option value="emergency">Emergency Lockout</option>
+                                <option value="residential">Residential Service</option>
+                                <option value="commercial">Commercial Service</option>
+                                <option value="automotive">Automotive Service</option>
+                                <option value="smart-locks">Smart Lock Installation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Describe your locksmith needs..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="flex items-start">
+                                <input type="checkbox" id="urgent" name="urgent" class="mt-1 mr-3">
+                                <span class="text-sm">This is an emergency - please call me immediately</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Map & Address -->
+                <div>
+                    <div class="bg-white rounded-lg shadow-lg p-8 mb-6">
+                        <h2 class="text-2xl font-bold mb-6">Visit Our Office</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-yellow-500 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Main Office</h4>
+                                    <p>123 Security Boulevard<br>
+                                       Suite 100<br>
+                                       New York, NY 10001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-yellow-500 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Business Hours</h4>
+                                    <p><strong>Emergency Service:</strong> 24/7<br>
+                                       <strong>Office Hours:</strong><br>
+                                       Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                       Saturday: 9:00 AM - 4:00 PM<br>
+                                       Sunday: Closed</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-phone text-yellow-500 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Contact Numbers</h4>
+                                    <p><strong>Emergency:</strong> 1-800-LOCKSMITH<br>
+                                       <strong>Office:</strong> (555) 123-4567<br>
+                                       <strong>Fax:</strong> (555) 123-4568</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Google Map -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6875438429!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb8a6a7%3A0x4b5c5c5c5c5c5c5c!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1234567890"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Service Areas</h2>
+                <p>We provide locksmith services across all major areas</p>
+            </div>
+            
+            <div class="grid grid-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-center">
+                    <i class="fas fa-city text-3xl text-yellow-500 mb-2"></i>
+                    <h4 class="font-semibold">Downtown</h4>
+                    <p class="text-sm">Financial District</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-home text-3xl text-yellow-500 mb-2"></i>
+                    <h4 class="font-semibold">Residential</h4>
+                    <p class="text-sm">All Neighborhoods</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-plane text-3xl text-yellow-500 mb-2"></i>
+                    <h4 class="font-semibold">Airport</h4>
+                    <p class="text-sm">Transportation</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-industry text-3xl text-yellow-500 mb-2"></i>
+                    <h4 class="font-semibold">Industrial</h4>
+                    <p class="text-sm">Business Parks</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="areas.html" class="btn-primary">View All Service Areas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency CTA -->
+    <section class="section bg-red-600 text-white">
+        <div class="container text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-white">Emergency Locksmith Needed?</h2>
+                <p class="text-xl mb-6">Don't wait! Call us now for immediate assistance</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+1-800-LOCKSMITH" class="btn-emergency bg-white text-red-600 hover:bg-gray-100">
+                        <i class="fas fa-phone-alt"></i> Call 1-800-LOCKSMITH
+                    </a>
+                    <a href="https://wa.me/18007625743" class="btn-secondary border-white text-white hover:bg-white hover:text-red-600">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Support
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-gray-50">
+        <div class="container max-w-4xl">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            
+            <div class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="font-semibold">How quickly can you arrive for an emergency?</h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-gray-600">
+                        <p>We typically arrive within 15-30 minutes for emergency calls within our service areas. Response time may vary depending on traffic and distance.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow p-6">
+                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="font-semibold">Are your services available 24/7?</h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-gray-600">
+                        <p>Yes! Our emergency locksmith services are available 24 hours a day, 7 days a week, including holidays. Non-emergency services are available during regular business hours.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow p-6">
+                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="font-semibold">Are you licensed and insured?</h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-gray-600">
+                        <p>Absolutely. All our technicians are fully licensed, certified, and insured. We carry comprehensive liability insurance to protect our customers and their property.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="faq.html" class="btn-secondary">View All FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-yellow-400">LockSmith Pro</h4>
+                <p>Your trusted 24/7 emergency locksmith service. Licensed, insured, and committed to your security.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-linkedin text-xl"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="services.html" class="text-white hover:text-yellow-400">Services</a></li>
+                    <li><a href="pricing.html" class="text-white hover:text-yellow-400">Pricing</a></li>
+                    <li><a href="areas.html" class="text-white hover:text-yellow-400">Service Areas</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-yellow-400">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Services</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-white hover:text-yellow-400">Emergency Lockout</a></li>
+                    <li><a href="#" class="text-white hover:text-yellow-400">Car Key Replacement</a></li>
+                    <li><a href="#" class="text-white hover:text-yellow-400">Smart Lock Installation</a></li>
+                    <li><a href="#" class="text-white hover:text-yellow-400">Lock Repair</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Contact Info</h4>
+                <ul class="space-y-2">
+                    <li><i class="fas fa-phone"></i> 1-800-LOCKSMITH</li>
+                    <li><i class="fas fa-envelope"></i> info@locksmithpro.com</li>
+                    <li><i class="fas fa-clock"></i> 24/7 Emergency Service</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Security Blvd, NY 10001</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 LockSmith Pro. All rights reserved. | Licensed & Insured</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // FAQ Toggle
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            answer.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Check if urgent
+            if (data.urgent) {
+                alert('Emergency request received! We will call you immediately at ' + data.phone);
+            } else {
+                alert('Thank you for your message! We will respond within 24 hours.');
+            }
+            
+            console.log('Contact form data:', data);
+            this.reset();
+        });
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.length <= 3) {
+                    value = `(${value}`;
+                } else if (value.length <= 6) {
+                    value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
+                } else {
+                    value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 10)}`;
+                }
+            }
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>

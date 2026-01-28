@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - LockSmith Pro | Create Account</title>
+    <meta name="description" content="Create your LockSmith Pro account to manage appointments, view service history, and get exclusive security tips and offers.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   
+
+    <!-- Registration Form -->
+    <section class="section">
+        <div class="container">
+            <div class="max-w-2xl mx-auto" data-aos="fade-up">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-center mb-6">
+                        <a href="index.html" class="text-2xl font-bold text-black hover:text-yellow-500 transition-colors duration-300">
+                            <i class="fas fa-lock text-yellow-500 mr-2"></i> LockSmith Pro
+                        </a>
+                        <p class="text-gray-600">Join thousands of satisfied customers</p>
+                    </div>
+                    
+                    <form id="registerForm">
+                        <div class="grid grid-2 gap-4">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="John" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="relative">
+                                <i class="fas fa-envelope absolute left-3 top-3 text-gray-400"></i>
+                                <input type="email" id="email" name="email" class="form-control pl-10" placeholder="john.doe@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <div class="relative">
+                                <i class="fas fa-phone absolute left-3 top-3 text-gray-400"></i>
+                                <input type="tel" id="phone" name="phone" class="form-control pl-10" placeholder="(555) 123-4567" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="relative">
+                                <i class="fas fa-lock absolute left-3 top-3 text-gray-400"></i>
+                                <input type="password" id="password" name="password" class="form-control pl-10" placeholder="Create a strong password" required>
+                                <button type="button" class="absolute right-3 top-3 text-gray-400 hover:text-yellow-500" onclick="togglePassword()">
+                                    <i class="fas fa-eye" id="passwordToggle"></i>
+                                </button>
+                            </div>
+                            <div class="mt-2">
+                                <div class="text-sm text-gray-600">Password must contain:</div>
+                                <ul class="text-xs text-gray-500 mt-1">
+                                    <li id="lengthCheck" class="flex items-center">
+                                        <i class="fas fa-times text-red-500 mr-1"></i> At least 8 characters
+                                    </li>
+                                    <li id="upperCheck" class="flex items-center">
+                                        <i class="fas fa-times text-red-500 mr-1"></i> One uppercase letter
+                                    </li>
+                                    <li id="numberCheck" class="flex items-center">
+                                        <i class="fas fa-times text-red-500 mr-1"></i> One number
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <div class="relative">
+                                <i class="fas fa-lock absolute left-3 top-3 text-gray-400"></i>
+                                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control pl-10" placeholder="Confirm your password" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Default Address (Optional)</label>
+                            <div class="relative">
+                                <i class="fas fa-map-marker-alt absolute left-3 top-3 text-gray-400"></i>
+                                <input type="text" id="address" name="address" class="form-control pl-10" placeholder="123 Main St, City, State">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="flex items-start">
+                                <input type="checkbox" id="terms" name="terms" class="mt-1 mr-3" required>
+                                <span class="text-sm">I agree to the <a href="#" class="text-yellow-500 hover:underline">Terms of Service</a> and <a href="#" class="text-yellow-500 hover:underline">Privacy Policy</a></span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="flex items-start">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="mt-1 mr-3">
+                                <span class="text-sm">I'd like to receive security tips and special offers via email</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full">
+                            <i class="fas fa-user-plus"></i> Create Account
+                        </button>
+                        
+                        <div class="text-center mt-4">
+                            <p class="text-gray-600">Already have an account? <a href="login.html" class="text-yellow-500 hover:text-yellow-600">Login here</a></p>
+                        </div>
+                    </form>
+                    
+                    <!-- Social Registration -->
+                    <div class="mt-6">
+                        <div class="relative">
+                            <div class="absolute inset-0 flex items-center">
+                                <div class="w-full border-t border-gray-300"></div>
+                            </div>
+                            <div class="relative flex justify-center text-sm">
+                                <span class="px-2 bg-white text-gray-500">Or register with</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 flex flex-row gap-3 justify-center">
+                            <button type="button" class="btn-secondary border-gray-300 text-gray-700 hover:bg-gray-50">
+                                <i class="fab fa-google mr-2"></i> Google
+                            </button>
+                            <button type="button" class="btn-secondary border-gray-300 text-gray-700 hover:bg-gray-50">
+                                <i class="fab fa-facebook mr-2"></i> Facebook
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+             
+
+   
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Toggle Password Visibility
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const passwordToggle = document.getElementById('passwordToggle');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                passwordToggle.classList.remove('fa-eye');
+                passwordToggle.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                passwordToggle.classList.remove('fa-eye-slash');
+                passwordToggle.classList.add('fa-eye');
+            }
+        }
+
+        // Password Validation
+        function validatePassword(password) {
+            const lengthCheck = document.getElementById('lengthCheck');
+            const upperCheck = document.getElementById('upperCheck');
+            const numberCheck = document.getElementById('numberCheck');
+            
+            // Length check
+            if (password.length >= 8) {
+                lengthCheck.innerHTML = '<i class="fas fa-check text-green-500 mr-1"></i> At least 8 characters';
+            } else {
+                lengthCheck.innerHTML = '<i class="fas fa-times text-red-500 mr-1"></i> At least 8 characters';
+            }
+            
+            // Uppercase check
+            if (/[A-Z]/.test(password)) {
+                upperCheck.innerHTML = '<i class="fas fa-check text-green-500 mr-1"></i> One uppercase letter';
+            } else {
+                upperCheck.innerHTML = '<i class="fas fa-times text-red-500 mr-1"></i> One uppercase letter';
+            }
+            
+            // Number check
+            if (/[0-9]/.test(password)) {
+                numberCheck.innerHTML = '<i class="fas fa-check text-green-500 mr-1"></i> One number';
+            } else {
+                numberCheck.innerHTML = '<i class="fas fa-times text-red-500 mr-1"></i> One number';
+            }
+        }
+
+        // Password input event listener
+        document.getElementById('password').addEventListener('input', function(e) {
+            validatePassword(e.target.value);
+        });
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.length <= 3) {
+                    value = `(${value}`;
+                } else if (value.length <= 6) {
+                    value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
+                } else {
+                    value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 10)}`;
+                }
+            }
+            e.target.value = value;
+        });
+
+        // Registration Form Submission
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            // Validate passwords match
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+            
+            // Validate password strength
+            if (password.length < 8 || !/[A-Z]/.test(password) || !/[0-9]/.test(password)) {
+                alert('Please create a stronger password that meets all requirements.');
+                return;
+            }
+            
+            // Simulate successful registration
+            alert('Registration successful! Please check your email to verify your account.');
+            
+            // Redirect to login page
+            setTimeout(() => {
+                window.location.href = 'login.html';
+            }, 2000);
+        });
+
+        // Social Registration Handlers
+        document.querySelectorAll('button[type="button"]').forEach(button => {
+            if (button.textContent.includes('Google') || button.textContent.includes('Facebook')) {
+                button.addEventListener('click', function() {
+                    alert('Social registration integration would be implemented here');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
