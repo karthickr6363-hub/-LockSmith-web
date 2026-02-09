@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - LockSmith Pro | Frequently Asked Questions</title>
-    <meta name="description" content="Find answers to common questions about locksmith services, emergency response times, pricing, warranties, payment methods, and safety policies.">
-    
+    <meta name="description"
+        content="Find answers to common questions about locksmith services, emergency response times, pricing, warranties, payment methods, and safety policies.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -20,6 +22,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -42,7 +45,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="areas.html">Areas</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
-                        <li><a href="faq.html" class="text-yellow-400">FAQ</a></li>
+                        <li><a href="faq.html" class="text-secondary">FAQ</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="pricing.html">Pricing</a></li>
                     </ul>
@@ -57,8 +60,8 @@
                 </li>
                 <li><a href="register.html" class="btn-signup">Sign Up</a></li>
                 <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon" id="themeIcon"></i>
-                </button></li>
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button></li>
             </ul>
         </div>
     </nav>
@@ -87,8 +90,9 @@
             <div class="max-w-2xl mx-auto" data-aos="fade-up">
                 <div class="bg-white rounded-lg shadow-lg p-6">
                     <div class="relative">
-                        <input type="text" id="faqSearch" placeholder="Search for answers..." class="form-control pr-12">
-                        <button class="absolute right-3 top-3 text-gray-400 hover:text-yellow-500">
+                        <input type="text" id="faqSearch" placeholder="Search for answers..."
+                            class="form-control pr-12">
+                        <button class="absolute right-3 top-3 text-gray-400 hover:text-secondary">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
@@ -104,45 +108,60 @@
                 <h2>Response Time & Availability</h2>
                 <p>Everything you need to know about our service timing</p>
             </div>
-            
+
             <div class="max-w-4xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">How quickly can you arrive for an emergency?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>Our average emergency response time is 15-30 minutes within our service areas. For urgent situations like lockouts, we prioritize immediate dispatch. Response times may vary depending on traffic conditions and your specific location, but we always strive to arrive as quickly as possible.</p>
+                        <p>Our average emergency response time is 15-30 minutes within our service areas. For urgent
+                            situations like lockouts, we prioritize immediate dispatch. Response times may vary
+                            depending on traffic conditions and your specific location, but we always strive to arrive
+                            as quickly as possible.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">Are your services available 24/7?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>Yes! Our emergency locksmith services are available 24 hours a day, 7 days a week, including holidays and weekends. Non-emergency services like scheduled installations and consultations are available during regular business hours (8 AM - 6 PM, Monday - Saturday).</p>
+                        <p>Yes! Our emergency locksmith services are available 24 hours a day, 7 days a week, including
+                            holidays and weekends. Non-emergency services like scheduled installations and consultations
+                            are available during regular business hours (8 AM - 6 PM, Monday - Saturday).</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">Do you charge extra for after-hours service?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>Yes, there is an additional emergency service fee for calls outside regular business hours (8 PM - 6 AM) and holidays. The emergency fee is typically $60-80 depending on the service type and location. We always provide complete pricing information before starting any work.</p>
+                        <p>Yes, there is an additional emergency service fee for calls outside regular business hours (8
+                            PM - 6 AM) and holidays. The emergency fee is typically $60-80 depending on the service type
+                            and location. We always provide complete pricing information before starting any work.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">What areas do you service?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>We provide comprehensive locksmith services across all five boroughs of New York City (Manhattan, Brooklyn, Queens, Bronx, Staten Island) and parts of New Jersey. Our service coverage includes both residential and commercial areas. Check our <a href="areas.html" class="text-yellow-500 hover:underline">Service Areas page</a> for detailed coverage information.</p>
+                        <p>We provide comprehensive locksmith services across all five boroughs of New York City
+                            (Manhattan, Brooklyn, Queens, Bronx, Staten Island) and parts of New Jersey. Our service
+                            coverage includes both residential and commercial areas. Check our <a href="areas.html"
+                                class="text-secondary hover:underline">Service Areas page</a> for detailed coverage
+                            information.</p>
                     </div>
                 </div>
             </div>
@@ -156,10 +175,11 @@
                 <h2>Warranty & Guarantees</h2>
                 <p>Our commitment to quality and customer satisfaction</p>
             </div>
-            
+
             <div class="max-w-4xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">What kind of warranty do you offer on your work?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
@@ -174,24 +194,31 @@
                         <p class="mt-2">All warranty terms are provided in writing before service begins.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">Do you guarantee your prices?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>Absolutely! We provide upfront pricing with no hidden fees. The price we quote is the price you pay. We also offer a price match guarantee - if you find a lower price from a licensed, insured competitor for the same service, we'll match it within 10%.</p>
+                        <p>Absolutely! We provide upfront pricing with no hidden fees. The price we quote is the price
+                            you pay. We also offer a price match guarantee - if you find a lower price from a licensed,
+                            insured competitor for the same service, we'll match it within 10%.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">What if I'm not satisfied with the service?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>Your satisfaction is our top priority. If you're not completely satisfied with our service, please contact us within 30 days and we'll make it right. This includes rework at no additional charge or a full refund if we're unable to resolve the issue to your satisfaction.</p>
+                        <p>Your satisfaction is our top priority. If you're not completely satisfied with our service,
+                            please contact us within 30 days and we'll make it right. This includes rework at no
+                            additional charge or a full refund if we're unable to resolve the issue to your
+                            satisfaction.</p>
                     </div>
                 </div>
             </div>
@@ -205,10 +232,11 @@
                 <h2>Payment Methods</h2>
                 <p>Flexible payment options for your convenience</p>
             </div>
-            
+
             <div class="max-w-4xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">What payment methods do you accept?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
@@ -224,24 +252,30 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">When do I need to pay for the service?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>Payment is due upon completion of the service. Our technician will provide you with a detailed invoice and collect payment before leaving. For large commercial projects, we offer net 30 payment terms with approved credit applications.</p>
+                        <p>Payment is due upon completion of the service. Our technician will provide you with a
+                            detailed invoice and collect payment before leaving. For large commercial projects, we offer
+                            net 30 payment terms with approved credit applications.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">Do you offer payment plans?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>For larger projects like complete security system installations, we offer flexible payment plans. These are available for projects over $1,000 and can be customized to fit your budget. Please ask our technician about payment plan options during your consultation.</p>
+                        <p>For larger projects like complete security system installations, we offer flexible payment
+                            plans. These are available for projects over $1,000 and can be customized to fit your
+                            budget. Please ask our technician about payment plan options during your consultation.</p>
                     </div>
                 </div>
             </div>
@@ -255,30 +289,38 @@
                 <h2>Safety & Security</h2>
                 <p>Your safety is our priority</p>
             </div>
-            
+
             <div class="max-w-4xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">Are your technicians background-checked?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>Yes, absolutely. All our technicians undergo comprehensive background checks, including criminal history, driving records, and drug testing. We also verify their professional licenses and certifications. Your safety and security are our top priorities.</p>
+                        <p>Yes, absolutely. All our technicians undergo comprehensive background checks, including
+                            criminal history, driving records, and drug testing. We also verify their professional
+                            licenses and certifications. Your safety and security are our top priorities.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">Are you licensed and insured?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>Yes, we are fully licensed by the state and carry comprehensive liability insurance and workers' compensation. We're also bonded for your protection. All our license and insurance information is available for review upon request, and we can provide copies before beginning any work.</p>
+                        <p>Yes, we are fully licensed by the state and carry comprehensive liability insurance and
+                            workers' compensation. We're also bonded for your protection. All our license and insurance
+                            information is available for review upon request, and we can provide copies before beginning
+                            any work.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">What safety measures do you follow during COVID-19?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
@@ -293,14 +335,18 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">How do I verify the technician's identity?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>All our technicians arrive in clearly marked LockSmith Pro vehicles and wear company uniforms with photo ID badges. When they arrive, you can ask to see their company ID and state license. You can also call our office at 1-800-LOCKSMITH to verify the technician's identity and arrival.</p>
+                        <p>All our technicians arrive in clearly marked LockSmith Pro vehicles and wear company uniforms
+                            with photo ID badges. When they arrive, you can ask to see their company ID and state
+                            license. You can also call our office at 1-800-LOCKSMITH to verify the technician's identity
+                            and arrival.</p>
                     </div>
                 </div>
             </div>
@@ -314,45 +360,60 @@
                 <h2>Service-Specific Questions</h2>
                 <p>Detailed answers about our specific services</p>
             </div>
-            
+
             <div class="max-w-4xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">Can you make keys for any car model?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>We can make keys for over 95% of vehicles on the road today, including most luxury and foreign cars. Our technicians are equipped with the latest key programming technology and can create transponder keys, smart keys, and remote fobs on-site. For rare or antique vehicles, we may need to special order parts.</p>
+                        <p>We can make keys for over 95% of vehicles on the road today, including most luxury and
+                            foreign cars. Our technicians are equipped with the latest key programming technology and
+                            can create transponder keys, smart keys, and remote fobs on-site. For rare or antique
+                            vehicles, we may need to special order parts.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">Do you damage doors or locks during emergency lockouts?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>No, we use non-destructive entry methods whenever possible. Our technicians are trained in specialized lock picking and bypass techniques that allow us to gain entry without damaging your property. In rare cases where damage is unavoidable, we'll explain the situation beforehand and get your approval.</p>
+                        <p>No, we use non-destructive entry methods whenever possible. Our technicians are trained in
+                            specialized lock picking and bypass techniques that allow us to gain entry without damaging
+                            your property. In rare cases where damage is unavoidable, we'll explain the situation
+                            beforehand and get your approval.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">What types of smart locks do you install?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>We install all major smart lock brands including August, Schlage, Kwikset, Yale, and more. We can help you choose the best system for your needs and integrate it with your existing smart home setup. We also provide training on how to use your new smart locks.</p>
+                        <p>We install all major smart lock brands including August, Schlage, Kwikset, Yale, and more. We
+                            can help you choose the best system for your needs and integrate it with your existing smart
+                            home setup. We also provide training on how to use your new smart locks.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item bg-white rounded-lg shadow p-6">
-                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                    <button class="faq-question w-full text-left flex justify-between items-center"
+                        onclick="toggleFAQ(this)">
                         <h3 class="font-semibold text-lg">Can you open safes without the combination?</h3>
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden mt-4 text-gray-600">
-                        <p>Yes, we can open most safes without the combination using specialized techniques and tools. Our safe opening methods are designed to minimize damage to the safe. For high-security safes, we may need to drill, but we always use the least invasive method possible and can often repair the drill point.</p>
+                        <p>Yes, we can open most safes without the combination using specialized techniques and tools.
+                            Our safe opening methods are designed to minimize damage to the safe. For high-security
+                            safes, we may need to drill, but we always use the least invasive method possible and can
+                            often repair the drill point.</p>
                     </div>
                 </div>
             </div>
@@ -362,17 +423,19 @@
     <!-- Still Have Questions -->
     <section class="section">
         <div class="container">
-            <div class="bg-yellow-500 rounded-lg p-8 text-center" data-aos="fade-up">
+            <div class="bg-secondary rounded-lg p-8 text-center" data-aos="fade-up">
                 <h2 class="text-3xl font-bold text-black mb-4">Still Have Questions?</h2>
                 <p class="text-black text-xl mb-6">Our friendly customer service team is here to help</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="tel:+1-800-LOCKSMITH" class="btn-emergency bg-black text-yellow-500 hover:bg-gray-800">
+                    <a href="tel:+1-800-LOCKSMITH" class="btn-emergency bg-black text-secondary hover:bg-gray-800">
                         <i class="fas fa-phone-alt"></i> Call 1-800-LOCKSMITH
                     </a>
-                    <a href="contact.html" class="btn-secondary border-black text-black hover:bg-black hover:text-yellow-500">
+                    <a href="contact.html"
+                        class="btn-secondary border-black text-black hover:bg-black hover:text-secondary">
                         <i class="fas fa-envelope"></i> Email Us
                     </a>
-                    <a href="book.html" class="btn-secondary border-black text-black hover:bg-black hover:text-yellow-500">
+                    <a href="book.html"
+                        class="btn-secondary border-black text-black hover:bg-black hover:text-secondary">
                         <i class="fas fa-calendar-check"></i> Schedule Consultation
                     </a>
                 </div>
@@ -384,47 +447,47 @@
     <footer class="footer">
         <div class="footer-content">
             <div>
-                <h4 class="text-xl font-semibold mb-4 text-yellow-400">LockSmith Pro</h4>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">LockSmith Pro</h4>
                 <p>Your trusted 24/7 emergency locksmith service. Licensed, insured, and committed to your security.</p>
                 <div class="flex space-x-4 mt-4">
-                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-facebook text-xl"></i></a>
-                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-twitter text-xl"></i></a>
-                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-instagram text-xl"></i></a>
-                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-linkedin text-xl"></i></a>
                 </div>
             </div>
-            
+
             <div>
-                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Quick Links</h4>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">Quick Links</h4>
                 <ul class="space-y-2">
-                    <li><a href="services.html" class="text-white hover:text-yellow-400">Services</a></li>
-                    <li><a href="pricing.html" class="text-white hover:text-yellow-400">Pricing</a></li>
-                    <li><a href="areas.html" class="text-white hover:text-yellow-400">Service Areas</a></li>
-                    <li><a href="contact.html" class="text-white hover:text-yellow-400">Contact Us</a></li>
+                    <li><a href="services.html" class="text-white hover:text-secondary">Services</a></li>
+                    <li><a href="pricing.html" class="text-white hover:text-secondary">Pricing</a></li>
+                    <li><a href="areas.html" class="text-white hover:text-secondary">Service Areas</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-secondary">Contact Us</a></li>
                 </ul>
             </div>
-            
+
             <div>
-                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Services</h4>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">Services</h4>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-white hover:text-yellow-400">Emergency Lockout</a></li>
-                    <li><a href="#" class="text-white hover:text-yellow-400">Car Key Replacement</a></li>
-                    <li><a href="#" class="text-white hover:text-yellow-400">Smart Lock Installation</a></li>
-                    <li><a href="#" class="text-white hover:text-yellow-400">Lock Repair</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Emergency Lockout</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Car Key Replacement</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Smart Lock Installation</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Lock Repair</a></li>
                 </ul>
             </div>
-            
+
             <div>
-                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Contact Info</h4>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">Contact Info</h4>
                 <ul class="space-y-2">
-                    <li><i class="fas fa-phone"></i> 1-800-LOCKSMITH</li>
-                    <li><i class="fas fa-envelope"></i> info@locksmithpro.com</li>
-                    <li><i class="fas fa-clock"></i> 24/7 Emergency Service</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Nationwide Service</li>
+                    <li><i class="fas fa-phone text-secondary mr-2"></i> 1-800-LOCKSMITH</li>
+                    <li><i class="fas fa-envelope text-secondary mr-2"></i> info@locksmithpro.com</li>
+                    <li><i class="fas fa-clock text-secondary mr-2"></i> 24/7 Emergency Service</li>
+                    <li><i class="fas fa-map-marker-alt text-secondary mr-2"></i> Nationwide Service</li>
                 </ul>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>&copy; 2026 LockSmith Pro. All rights reserved. | Licensed & Insured</p>
         </div>
@@ -443,94 +506,67 @@
         function toggleFAQ(button) {
             const answer = button.nextElementSibling;
             const icon = button.querySelector('i');
-            
+
             answer.classList.toggle('hidden');
             icon.classList.toggle('rotate-180');
         }
 
         // FAQ Search Functionality
-        document.getElementById('faqSearch').addEventListener('input', function(e) {
+        document.getElementById('faqSearch').addEventListener('input', function (e) {
             const searchTerm = e.target.value.toLowerCase();
             const faqItems = document.querySelectorAll('.faq-item');
-            
+
             faqItems.forEach(item => {
                 const question = item.querySelector('h3').textContent.toLowerCase();
                 const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
-                
+
                 if (question.includes(searchTerm) || answer.includes(searchTerm)) {
                     item.style.display = 'block';
-                    
+
                     // Highlight matching text
                     if (searchTerm.length > 2) {
-                        item.classList.add('ring-2', 'ring-yellow-500');
+                        item.classList.add('ring-2', 'ring-secondary');
+                        item.classList.remove('bg-gray-100');
                     } else {
-                        item.classList.remove('ring-2', 'ring-yellow-500');
+                        item.classList.remove('ring-2', 'ring-secondary');
+                        item.classList.add('bg-gray-100');
                     }
                 } else {
                     item.style.display = 'none';
                 }
             });
-            
+
             // Show all items if search is empty
             if (searchTerm === '') {
                 faqItems.forEach(item => {
                     item.style.display = 'block';
-                    item.classList.remove('ring-2', 'ring-yellow-500');
+                    item.classList.remove('ring-2', 'ring-secondary');
                 });
             }
         });
 
+        // Handle hover states
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                if (!item.querySelector('.faq-answer').classList.contains('hidden')) return;
+                item.classList.add('ring-2', 'ring-secondary');
+            });
+            item.addEventListener('mouseleave', () => {
+                if (!item.querySelector('.faq-answer').classList.contains('hidden')) return;
+                item.classList.remove('ring-2', 'ring-secondary');
+            });
+        });
         // Expand first FAQ item by default
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             const firstFAQ = document.querySelector('.faq-question');
             if (firstFAQ) {
                 toggleFAQ(firstFAQ);
             }
         });
 
-        // Dark Theme Toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const html = document.documentElement;
 
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        html.setAttribute('data-theme', currentTheme);
-        updateThemeIcon(currentTheme);
-
-        themeToggle.addEventListener('click', function() {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-
-        function updateThemeIcon(theme) {
-            if (theme === 'dark') {
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-            } else {
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
-            }
-        }
-
-        // Check system preference for dark mode
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('theme')) {
-            html.setAttribute('data-theme', 'dark');
-            updateThemeIcon('dark');
-        }
-
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                const newTheme = e.matches ? 'dark' : 'light';
-                html.setAttribute('data-theme', newTheme);
-                updateThemeIcon(newTheme);
-            }
-        });
     </script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

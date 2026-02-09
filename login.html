@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - LockSmith Pro | Customer Portal</title>
-    <meta name="description" content="Login to your LockSmith Pro account to manage appointments, view service history, and track technician status.">
-    
+    <meta name="description"
+        content="Login to your LockSmith Pro account to manage appointments, view service history, and track technician status.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -20,6 +22,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <!-- Simple Navigation -->
     <nav class="navbar">
@@ -28,7 +31,7 @@
                 <i class="fas fa-lock"></i> LockSmith Pro
             </a>
             <div class="flex items-center">
-                <a href="register.html" class="text-white mr-4 hover:text-yellow-400 transition-colors">Register</a>
+                <a href="register.html" class="text-white mr-4 hover:text-secondary transition-colors">Register</a>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                     <i class="fas fa-moon" id="themeIcon"></i>
                 </button>
@@ -42,49 +45,54 @@
             <div class="max-w-md mx-auto" data-aos="fade-up">
                 <div class="bg-white rounded-lg shadow-lg p-8">
                     <div class="text-center mb-6">
-                        <a href="index.html" class="text-2xl font-bold text-black hover:text-yellow-500 transition-colors duration-300">
-                            <i class="fas fa-lock text-yellow-500 mr-2"></i> LockSmith Pro
+                        <a href="index.html"
+                            class="text-2xl font-bold text-black hover:text-secondary transition-colors duration-300">
+                            <i class="fas fa-lock text-secondary mr-2"></i> LockSmith Pro
                         </a>
                         <p class="text-gray-600">Sign in to manage your account</p>
                     </div>
-                    
+
                     <form id="loginForm">
                         <div class="form-group">
                             <label for="email">Email Address</label>
                             <div class="relative">
                                 <i class="fas fa-envelope absolute left-3 top-3 text-gray-400"></i>
-                                <input type="email" id="email" name="email" class="form-control pl-10" placeholder="Enter your email" required>
+                                <input type="email" id="email" name="email" class="form-control pl-10"
+                                    placeholder="Enter your email" required>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="password">Password</label>
                             <div class="relative">
                                 <i class="fas fa-lock absolute left-3 top-3 text-gray-400"></i>
-                                <input type="password" id="password" name="password" class="form-control pl-10" placeholder="Enter your password" required>
-                                <button type="button" class="absolute right-3 top-3 text-gray-400 hover:text-yellow-500" onclick="togglePassword()">
+                                <input type="password" id="password" name="password" class="form-control pl-10"
+                                    placeholder="Enter your password" required>
+                                <button type="button" class="absolute right-3 top-3 text-gray-400 hover:text-secondary"
+                                    onclick="togglePassword()">
                                     <i class="fas fa-eye" id="passwordToggle"></i>
                                 </button>
                             </div>
                         </div>
-                        
+
                         <div class="flex justify-between items-center mb-6">
                             <label class="flex items-center">
                                 <input type="checkbox" name="remember" class="mr-2">
                                 <span class="text-sm">Remember me</span>
                             </label>
-                            <a href="#" class="text-sm text-yellow-500 hover:text-yellow-600">Forgot Password?</a>
+                            <a href="#" class="text-sm text-secondary hover:opacity-80">Forgot Password?</a>
                         </div>
-                        
+
                         <button type="submit" class="btn-primary w-full mb-4">
                             <i class="fas fa-sign-in-alt"></i> Login
                         </button>
-                        
+
                         <div class="text-center">
-                            <p class="text-gray-600">Don't have an account? <a href="register.html" class="text-yellow-500 hover:text-yellow-600">Register here</a></p>
+                            <p class="text-gray-600">Don't have an account? <a href="register.html"
+                                    class="text-secondary hover:opacity-80">Register here</a></p>
                         </div>
                     </form>
-                    
+
                     <!-- Social Login -->
                     <div class="mt-6">
                         <div class="relative">
@@ -95,7 +103,7 @@
                                 <span class="px-2 bg-white text-gray-500">Or continue with</span>
                             </div>
                         </div>
-                        
+
                         <div class="mt-4 flex flex-row gap-3 justify-center">
                             <button type="button" class="btn-secondary border-gray-300 text-gray-700 hover:bg-gray-50">
                                 <i class="fab fa-google mr-2"></i> Google
@@ -106,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Emergency Access -->
                 <div class="bg-red-50 rounded-lg p-6 mt-6 text-center">
                     <h3 class="text-lg font-semibold text-red-800 mb-2">Need Emergency Service?</h3>
@@ -119,7 +127,56 @@
         </div>
     </section>
 
-  
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">LockSmith Pro</h4>
+                <p>Your trusted 24/7 emergency locksmith service. Licensed, insured, and committed to your security.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-linkedin text-xl"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="services.html" class="text-white hover:text-secondary">Services</a></li>
+                    <li><a href="pricing.html" class="text-white hover:text-secondary">Pricing</a></li>
+                    <li><a href="areas.html" class="text-white hover:text-secondary">Service Areas</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-secondary">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">Services</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-white hover:text-secondary">Emergency Lockout</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Car Key Replacement</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Smart Lock Installation</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Lock Repair</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">Contact Info</h4>
+                <ul class="space-y-2">
+                    <li><i class="fas fa-phone text-secondary mr-2"></i> 1-800-LOCKSMITH</li>
+                    <li><i class="fas fa-envelope text-secondary mr-2"></i> info@locksmithpro.com</li>
+                    <li><i class="fas fa-clock text-secondary mr-2"></i> 24/7 Emergency Service</li>
+                    <li><i class="fas fa-map-marker-alt text-secondary mr-2"></i> Nationwide Service</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 LockSmith Pro. All rights reserved. | Licensed & Insured</p>
+        </div>
+    </footer>
+
+
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -134,7 +191,7 @@
         function togglePassword() {
             const passwordInput = document.getElementById('password');
             const passwordToggle = document.getElementById('passwordToggle');
-            
+
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';
                 passwordToggle.classList.remove('fa-eye');
@@ -147,12 +204,12 @@
         }
 
         // Login Form Submission
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
-            
+
             // Simple validation (in real app, this would be server-side)
             if (email && password) {
                 // Simulate successful login
@@ -168,7 +225,7 @@
         // Social Login Handlers
         document.querySelectorAll('button[type="button"]').forEach(button => {
             if (button.textContent.includes('Google') || button.textContent.includes('Facebook')) {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     alert('Social login integration would be implemented here');
                 });
             }
@@ -184,10 +241,10 @@
         html.setAttribute('data-theme', currentTheme);
         updateThemeIcon(currentTheme);
 
-        themeToggle.addEventListener('click', function() {
+        themeToggle.addEventListener('click', function () {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
+
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
             updateThemeIcon(newTheme);
@@ -218,5 +275,7 @@
             }
         });
     </script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

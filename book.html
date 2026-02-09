@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Locksmith Service - Online Appointment</title>
-    <meta name="description" content="Book professional locksmith service online. Fast appointment scheduling for emergency, residential, commercial, and automotive locksmith services.">
-    
+    <meta name="description"
+        content="Book professional locksmith service online. Fast appointment scheduling for emergency, residential, commercial, and automotive locksmith services.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -20,6 +22,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -36,7 +39,7 @@
                     </ul>
                 </li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="book.html" class="text-yellow-400">Book Now</a></li>
+                <li><a href="book.html" class="text-secondary">Book Now</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Pages</a>
                     <ul class="dropdown-menu">
@@ -57,8 +60,8 @@
                 </li>
                 <li><a href="register.html" class="btn-signup">Sign Up</a></li>
                 <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon" id="themeIcon"></i>
-                </button></li>
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button></li>
             </ul>
         </div>
     </nav>
@@ -90,14 +93,16 @@
                 <form id="bookingForm">
                     <!-- Emergency Selection -->
                     <div class="mb-8">
-                        <h3 class="text-xl font-semibold mb-4">Service Priority</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Service Priority</h3>
                         <div class="grid grid-2 gap-4">
-                            <label class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-yellow-500 transition-colors">
+                            <label
+                                class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors">
                                 <input type="radio" name="priority" value="emergency" class="mr-3">
                                 <span class="font-semibold">🚨 Emergency Service</span>
                                 <p class="text-sm text-gray-600 mt-1">Immediate assistance - 15-30 min response</p>
                             </label>
-                            <label class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-yellow-500 transition-colors">
+                            <label
+                                class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors">
                                 <input type="radio" name="priority" value="normal" class="mr-3" checked>
                                 <span class="font-semibold">📅 Scheduled Service</span>
                                 <p class="text-sm text-gray-600 mt-1">Book appointment for later</p>
@@ -107,36 +112,42 @@
 
                     <!-- Service Selection -->
                     <div class="mb-8">
-                        <h3 class="text-xl font-semibold mb-4">Select Service Type</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Select Service Type</h3>
                         <div class="grid grid-3 gap-4">
-                            <label class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-yellow-500 transition-colors text-center">
+                            <label
+                                class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors text-center">
                                 <input type="radio" name="service" value="emergency-lockout" class="sr-only">
-                                <i class="fas fa-home text-3xl text-yellow-500 mb-2"></i>
+                                <i class="fas fa-home text-3xl text-secondary mb-2"></i>
                                 <div class="font-semibold">Emergency Lockout</div>
                             </label>
-                            <label class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-yellow-500 transition-colors text-center">
+                            <label
+                                class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors text-center">
                                 <input type="radio" name="service" value="residential" class="sr-only">
-                                <i class="fas fa-house-user text-3xl text-yellow-500 mb-2"></i>
+                                <i class="fas fa-house-user text-3xl text-secondary mb-2"></i>
                                 <div class="font-semibold">Residential</div>
                             </label>
-                            <label class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-yellow-500 transition-colors text-center">
+                            <label
+                                class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors text-center">
                                 <input type="radio" name="service" value="commercial" class="sr-only">
-                                <i class="fas fa-building text-3xl text-yellow-500 mb-2"></i>
+                                <i class="fas fa-building text-3xl text-secondary mb-2"></i>
                                 <div class="font-semibold">Commercial</div>
                             </label>
-                            <label class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-yellow-500 transition-colors text-center">
+                            <label
+                                class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors text-center">
                                 <input type="radio" name="service" value="automotive" class="sr-only">
-                                <i class="fas fa-car text-3xl text-yellow-500 mb-2"></i>
+                                <i class="fas fa-car text-3xl text-secondary mb-2"></i>
                                 <div class="font-semibold">Automotive</div>
                             </label>
-                            <label class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-yellow-500 transition-colors text-center">
+                            <label
+                                class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors text-center">
                                 <input type="radio" name="service" value="smart-locks" class="sr-only">
-                                <i class="fas fa-mobile-alt text-3xl text-yellow-500 mb-2"></i>
+                                <i class="fas fa-mobile-alt text-3xl text-secondary mb-2"></i>
                                 <div class="font-semibold">Smart Locks</div>
                             </label>
-                            <label class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-yellow-500 transition-colors text-center">
+                            <label
+                                class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors text-center">
                                 <input type="radio" name="service" value="lock-repair" class="sr-only">
-                                <i class="fas fa-wrench text-3xl text-yellow-500 mb-2"></i>
+                                <i class="fas fa-wrench text-3xl text-secondary mb-2"></i>
                                 <div class="font-semibold">Lock Repair</div>
                             </label>
                         </div>
@@ -146,9 +157,10 @@
                     <div class="grid grid-2 gap-6 mb-8">
                         <div class="form-group">
                             <label for="location">Service Location *</label>
-                            <input type="text" id="location" name="location" class="form-control" placeholder="Enter your address" required>
+                            <input type="text" id="location" name="location" class="form-control"
+                                placeholder="Enter your address" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="datetime">Preferred Date & Time *</label>
                             <input type="datetime-local" id="datetime" name="datetime" class="form-control" required>
@@ -157,38 +169,42 @@
 
                     <!-- Contact Details -->
                     <div class="mb-8">
-                        <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Contact Information</h3>
                         <div class="grid grid-2 gap-6">
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
                                 <input type="text" id="name" name="name" class="form-control" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="(555) 123-4567" required>
+                                <input type="tel" id="phone" name="phone" class="form-control"
+                                    placeholder="(555) 123-4567" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com">
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="your@email.com">
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="alt_phone">Alternative Phone</label>
-                                <input type="tel" id="alt_phone" name="alt_phone" class="form-control" placeholder="(555) 987-6543">
+                                <input type="tel" id="alt_phone" name="alt_phone" class="form-control"
+                                    placeholder="(555) 987-6543">
                             </div>
                         </div>
                     </div>
 
                     <!-- Service Details -->
                     <div class="mb-8">
-                        <h3 class="text-xl font-semibold mb-4">Service Details</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Service Details</h3>
                         <div class="form-group">
                             <label for="description">Describe Your Issue *</label>
-                            <textarea id="description" name="description" class="form-control" rows="4" placeholder="Please describe the locksmith service you need..." required></textarea>
+                            <textarea id="description" name="description" class="form-control" rows="4"
+                                placeholder="Please describe the locksmith service you need..." required></textarea>
                         </div>
-                        
+
                         <!-- Photo Upload -->
                         <div class="form-group">
                             <label for="photo">Upload Lock/Key Photo (Optional)</label>
@@ -208,26 +224,30 @@
 
                     <!-- Vehicle Details (for automotive services) -->
                     <div id="vehicleDetails" class="mb-8 hidden">
-                        <h3 class="text-xl font-semibold mb-4">Vehicle Information</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Vehicle Information</h3>
                         <div class="grid grid-2 gap-6">
                             <div class="form-group">
                                 <label for="make">Vehicle Make</label>
-                                <input type="text" id="make" name="make" class="form-control" placeholder="Toyota, Honda, etc.">
+                                <input type="text" id="make" name="make" class="form-control"
+                                    placeholder="Toyota, Honda, etc.">
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="model">Vehicle Model</label>
-                                <input type="text" id="model" name="model" class="form-control" placeholder="Camry, Civic, etc.">
+                                <input type="text" id="model" name="model" class="form-control"
+                                    placeholder="Camry, Civic, etc.">
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="year">Year</label>
-                                <input type="number" id="year" name="year" class="form-control" placeholder="2020" min="1900" max="2024">
+                                <input type="number" id="year" name="year" class="form-control" placeholder="2020"
+                                    min="1900" max="2024">
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="vin">VIN Number (Optional)</label>
-                                <input type="text" id="vin" name="vin" class="form-control" placeholder="Vehicle Identification Number">
+                                <input type="text" id="vin" name="vin" class="form-control"
+                                    placeholder="Vehicle Identification Number">
                             </div>
                         </div>
                     </div>
@@ -237,15 +257,19 @@
                         <div class="mb-6">
                             <label class="flex items-start">
                                 <input type="checkbox" id="terms" name="terms" class="mt-1 mr-3" required>
-                                <span class="text-sm">I agree to the <a href="#" class="text-yellow-500 hover:underline">terms of service</a> and <a href="#" class="text-yellow-500 hover:underline">privacy policy</a>. I understand that emergency services may have additional charges.</span>
+                                <span class="text-sm">I agree to the <a href="#"
+                                        class="text-secondary hover:underline">terms of service</a> and <a href="#"
+                                        class="text-secondary hover:underline">privacy policy</a>. I understand that
+                                    emergency services may have additional charges.</span>
                             </label>
                         </div>
-                        
+
                         <div class="flex flex-col sm:flex-row gap-4">
                             <button type="submit" class="btn-primary flex-1">
                                 <i class="fas fa-calendar-check"></i> Book Appointment
                             </button>
-                            <button type="button" class="btn-secondary flex-1" onclick="window.location.href='tel:+1-800-LOCKSMITH'">
+                            <button type="button" class="btn-secondary flex-1"
+                                onclick="window.location.href='tel:+1-800-LOCKSMITH'">
                                 <i class="fas fa-phone-alt"></i> Call Instead
                             </button>
                         </div>
@@ -262,30 +286,30 @@
                 <h2>Service Areas</h2>
                 <p>We provide service across all major metropolitan areas</p>
             </div>
-            
+
             <div class="grid grid-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="text-center">
-                    <i class="fas fa-map-marker-alt text-3xl text-yellow-500 mb-2"></i>
+                    <i class="fas fa-map-marker-alt text-3xl text-secondary mb-2"></i>
                     <h4 class="font-semibold">Downtown</h4>
                     <p class="text-sm">Business District</p>
                 </div>
                 <div class="text-center">
-                    <i class="fas fa-map-marker-alt text-3xl text-yellow-500 mb-2"></i>
+                    <i class="fas fa-map-marker-alt text-3xl text-secondary mb-2"></i>
                     <h4 class="font-semibold">Suburbs</h4>
                     <p class="text-sm">Residential Areas</p>
                 </div>
                 <div class="text-center">
-                    <i class="fas fa-map-marker-alt text-3xl text-yellow-500 mb-2"></i>
+                    <i class="fas fa-map-marker-alt text-3xl text-secondary mb-2"></i>
                     <h4 class="font-semibold">Airport</h4>
                     <p class="text-sm">Transportation Hub</p>
                 </div>
                 <div class="text-center">
-                    <i class="fas fa-map-marker-alt text-3xl text-yellow-500 mb-2"></i>
+                    <i class="fas fa-map-marker-alt text-3xl text-secondary mb-2"></i>
                     <h4 class="font-semibold">Industrial</h4>
                     <p class="text-sm">Commercial Zones</p>
                 </div>
             </div>
-            
+
             <div class="text-center mt-6">
                 <a href="areas.html" class="btn-secondary">View All Service Areas</a>
             </div>
@@ -309,47 +333,47 @@
     <footer class="footer">
         <div class="footer-content">
             <div>
-                <h4 class="text-xl font-semibold mb-4 text-yellow-400">LockSmith Pro</h4>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">LockSmith Pro</h4>
                 <p>Your trusted 24/7 emergency locksmith service. Licensed, insured, and committed to your security.</p>
                 <div class="flex space-x-4 mt-4">
-                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-facebook text-xl"></i></a>
-                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-twitter text-xl"></i></a>
-                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-instagram text-xl"></i></a>
-                    <a href="#" class="text-white hover:text-yellow-400"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-linkedin text-xl"></i></a>
                 </div>
             </div>
-            
+
             <div>
-                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Quick Links</h4>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">Quick Links</h4>
                 <ul class="space-y-2">
-                    <li><a href="services.html" class="text-white hover:text-yellow-400">Services</a></li>
-                    <li><a href="pricing.html" class="text-white hover:text-yellow-400">Pricing</a></li>
-                    <li><a href="areas.html" class="text-white hover:text-yellow-400">Service Areas</a></li>
-                    <li><a href="contact.html" class="text-white hover:text-yellow-400">Contact Us</a></li>
+                    <li><a href="services.html" class="text-white hover:text-secondary">Services</a></li>
+                    <li><a href="pricing.html" class="text-white hover:text-secondary">Pricing</a></li>
+                    <li><a href="areas.html" class="text-white hover:text-secondary">Service Areas</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-secondary">Contact Us</a></li>
                 </ul>
             </div>
-            
+
             <div>
-                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Services</h4>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">Services</h4>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-white hover:text-yellow-400">Emergency Lockout</a></li>
-                    <li><a href="#" class="text-white hover:text-yellow-400">Car Key Replacement</a></li>
-                    <li><a href="#" class="text-white hover:text-yellow-400">Smart Lock Installation</a></li>
-                    <li><a href="#" class="text-white hover:text-yellow-400">Lock Repair</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Emergency Lockout</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Car Key Replacement</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Smart Lock Installation</a></li>
+                    <li><a href="#" class="text-white hover:text-secondary">Lock Repair</a></li>
                 </ul>
             </div>
-            
+
             <div>
-                <h4 class="text-xl font-semibold mb-4 text-yellow-400">Contact Info</h4>
+                <h4 class="text-xl font-semibold mb-4 text-secondary">Contact Info</h4>
                 <ul class="space-y-2">
-                    <li><i class="fas fa-phone"></i> 1-800-LOCKSMITH</li>
-                    <li><i class="fas fa-envelope"></i> info@locksmithpro.com</li>
-                    <li><i class="fas fa-clock"></i> 24/7 Emergency Service</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Nationwide Service</li>
+                    <li><i class="fas fa-phone text-secondary mr-2"></i> 1-800-LOCKSMITH</li>
+                    <li><i class="fas fa-envelope text-secondary mr-2"></i> info@locksmithpro.com</li>
+                    <li><i class="fas fa-clock text-secondary mr-2"></i> 24/7 Emergency Service</li>
+                    <li><i class="fas fa-map-marker-alt text-secondary mr-2"></i> Nationwide Service</li>
                 </ul>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>&copy; 2026 LockSmith Pro. All rights reserved. | Licensed & Insured</p>
         </div>
@@ -366,17 +390,17 @@
 
         // Service selection styling
         document.querySelectorAll('input[name="service"]').forEach(radio => {
-            radio.addEventListener('change', function() {
+            radio.addEventListener('change', function () {
                 document.querySelectorAll('.service-selection').forEach(label => {
-                    label.classList.remove('border-yellow-500', 'bg-yellow-50');
+                    label.classList.remove('border-secondary', 'bg-secondary-light');
                     label.classList.add('border-gray-300');
                 });
-                
+
                 if (this.checked) {
                     this.closest('.service-selection').classList.remove('border-gray-300');
-                    this.closest('.service-selection').classList.add('border-yellow-500', 'bg-yellow-50');
+                    this.closest('.service-selection').classList.add('border-secondary', 'bg-secondary-light');
                 }
-                
+
                 // Show/hide vehicle details
                 const vehicleDetails = document.getElementById('vehicleDetails');
                 if (this.value === 'automotive') {
@@ -389,12 +413,12 @@
 
         // Priority selection styling
         document.querySelectorAll('input[name="priority"]').forEach(radio => {
-            radio.addEventListener('change', function() {
+            radio.addEventListener('change', function () {
                 document.querySelectorAll('input[name="priority"]').forEach(r => {
                     r.closest('label').classList.remove('border-red-500', 'bg-red-50');
                     r.closest('label').classList.add('border-gray-300');
                 });
-                
+
                 if (this.checked && this.value === 'emergency') {
                     this.closest('label').classList.remove('border-gray-300');
                     this.closest('label').classList.add('border-red-500', 'bg-red-50');
@@ -403,13 +427,13 @@
         });
 
         // Photo preview
-        document.getElementById('photo').addEventListener('change', function(e) {
+        document.getElementById('photo').addEventListener('change', function (e) {
             const file = e.target.files[0];
             const preview = document.getElementById('photoPreview');
-            
+
             if (file) {
                 const reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = function (e) {
                     preview.querySelector('img').src = e.target.result;
                     preview.classList.remove('hidden');
                 };
@@ -420,73 +444,31 @@
         });
 
         // Form submission
-        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        document.getElementById('bookingForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Get form data
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
-            
+
             // Simulate booking submission
             alert('Thank you for booking! We will contact you shortly to confirm your appointment.');
-            
+
             // In a real application, you would send this data to your server
             console.log('Booking data:', data);
-            
+
             // Reset form
             this.reset();
             document.getElementById('photoPreview').classList.add('hidden');
         });
 
-        // Set minimum datetime to current time
-        const datetimeInput = document.getElementById('datetime');
-        const now = new Date();
-        now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
-        datetimeInput.min = now.toISOString().slice(0, 16);
-
-        // Dark Theme Toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const html = document.documentElement;
-
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        html.setAttribute('data-theme', currentTheme);
-        updateThemeIcon(currentTheme);
-
-        themeToggle.addEventListener('click', function() {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-
-        function updateThemeIcon(theme) {
-            if (theme === 'dark') {
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-            } else {
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
-            }
-        }
-
-        // Check system preference for dark mode
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('theme')) {
-            html.setAttribute('data-theme', 'dark');
-            updateThemeIcon('dark');
-        }
-
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                const newTheme = e.matches ? 'dark' : 'light';
-                html.setAttribute('data-theme', newTheme);
-                updateThemeIcon(newTheme);
-            }
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
         });
     </script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
