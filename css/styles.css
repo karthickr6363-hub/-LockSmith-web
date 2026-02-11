@@ -235,6 +235,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -298,6 +307,72 @@ h6 {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: -0.005em;
+}
+
+/* Dashboard Styles - Base */
+.dashboard,
+.admin-dashboard {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.sidebar,
+.admin-sidebar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.sidebar-nav {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 1rem;
+}
+
+.sidebar-nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.main-content,
+.admin-main-content {
+    padding: 2rem;
+    width: 100%;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
 }
 
 /* Paragraph and text styling */
@@ -942,6 +1017,24 @@ p {
     padding: 4rem 20px 1rem;
 }
 
+.footer-brand {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.footer-brand:hover {
+    color: var(--secondary-color);
+}
+
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -1119,9 +1212,9 @@ p {
     }
 
     .dropdown-menu {
-        position: relative;
+        position: absolute;
         display: none;
-        width: 100%;
+        width: 100% !important;
         min-width: 100%;
         max-width: none;
         left: 0 !important;
@@ -1151,6 +1244,7 @@ p {
 
     .dropdown.active .dropdown-menu {
         display: block;
+        left: 100%;
     }
 
     .hero {
@@ -1194,6 +1288,12 @@ p {
     }
 
     /* Dashboard Mobile Header & Sidebar */
+    @media (min-width: 768px) {
+        .dashboard-cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     .dashboard-mobile-header {
         display: flex;
         justify-content: space-between;
@@ -1239,10 +1339,19 @@ p {
         display: block;
     }
 
+    .dashboard-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 20px;
+    }
+
     .dashboard,
     .admin-dashboard {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         min-height: auto;
+        width: 100%;
+        overflow-x: hidden;
     }
 
     .sidebar,
@@ -1328,6 +1437,13 @@ p {
 [data-theme="dark"] .text-gray-700,
 [data-theme="dark"] .text-gray-800 {
     color: rgba(250, 247, 242, 0.8) !important;
+}
+
+/* Hide dashboard mobile header on desktop */
+@media (min-width: 1025px) {
+    .dashboard-mobile-header {
+        display: none !important;
+    }
 }
 
 /* Smooth transition for theme switching */
@@ -1437,67 +1553,26 @@ p {
     padding: 1.5rem;
 }
 
-/* Dashboard Styles */
-.dashboard,
-.admin-dashboard {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    min-height: 100vh;
+/* Dashboard Header & Button Refinements */
+.content-section .flex-col .btn-primary,
+.content-section .flex-col .btn-secondary {
+    margin-bottom: 0;
 }
 
-.sidebar,
-.admin-sidebar {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 2rem 1rem;
-}
+@media (max-width: 640px) {
 
-.sidebar-nav {
-    list-style: none;
-}
+    .main-content,
+    .admin-main-content {
+        padding: 1rem;
+    }
 
-.sidebar-nav li {
-    margin-bottom: 1rem;
-}
+    .stat-card {
+        padding: 1.25rem;
+    }
 
-.sidebar-nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-.sidebar-nav a:hover,
-.sidebar-nav a.active {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-.main-content,
-.admin-main-content {
-    padding: 2rem;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.stat-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.stat-number {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--secondary-color);
+    .stat-number {
+        font-size: 1.5rem;
+    }
 }
 
 /* Global Dark Mode Overrides */
