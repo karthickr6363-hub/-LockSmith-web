@@ -29,12 +29,51 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Dashboard Sidebar Toggle
+    const dashboardToggle = document.getElementById('dashboardToggle');
+    const sidebarClose = document.getElementById('sidebarClose');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const adminSidebar = document.getElementById('adminSidebar');
+    const dashboardSidebar = document.getElementById('dashboardSidebar');
+    const activeSidebar = adminSidebar || dashboardSidebar;
+
+    if (dashboardToggle && activeSidebar) {
+        dashboardToggle.addEventListener('click', function () {
+            activeSidebar.classList.add('active');
+            if (sidebarOverlay) sidebarOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
+    if (sidebarClose && activeSidebar) {
+        sidebarClose.addEventListener('click', function () {
+            activeSidebar.classList.remove('active');
+            if (sidebarOverlay) sidebarOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+
+    if (sidebarOverlay && activeSidebar) {
+        sidebarOverlay.addEventListener('click', function () {
+            activeSidebar.classList.remove('active');
+            sidebarOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+
     // Close mobile menu when pressing Escape key
     document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape' && navbarNav && navbarNav.classList.contains('active')) {
-            navbarNav.classList.remove('active');
-            if (mobileMenuToggle) mobileMenuToggle.classList.remove('active');
-            document.body.style.overflow = '';
+        if (event.key === 'Escape') {
+            if (navbarNav && navbarNav.classList.contains('active')) {
+                navbarNav.classList.remove('active');
+                if (mobileMenuToggle) mobileMenuToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            if (activeSidebar && activeSidebar.classList.contains('active')) {
+                activeSidebar.classList.remove('active');
+                if (sidebarOverlay) sidebarOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         }
     });
 

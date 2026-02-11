@@ -9,9 +9,7 @@
         content="Book professional locksmith service online. Fast appointment scheduling for emergency, residential, commercial, and automotive locksmith services.">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -85,15 +83,16 @@
     <section class="section">
         <div class="container max-w-4xl">
             <div class="section-title" data-aos="fade-up">
-                <h2>Schedule Your Service</h2>
-                <p>Fill out the form below to book your appointment</p>
+                <h2 class="text-4xl md:text-6xl font-black mb-4">Schedule Your Service</h2>
+                <p class="text-lg opacity-90">Fill out the form below to book your appointment</p>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="100">
                 <form id="bookingForm">
                     <!-- Emergency Selection -->
                     <div class="mb-8">
-                        <h3 class="text-2xl font-semibold mb-4 text-primary">Service Priority</h3>
+                        <h3 class="text-3xl font-bold mb-6 text-primary border-b-2 border-secondary pb-2 inline-block">
+                            Service Priority</h3>
                         <div class="grid grid-2 gap-4">
                             <label
                                 class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors">
@@ -111,8 +110,9 @@
                     </div>
 
                     <!-- Service Selection -->
-                    <div class="mb-8">
-                        <h3 class="text-2xl font-semibold mb-4 text-primary">Select Service Type</h3>
+                    <div class="mb-10">
+                        <h3 class="text-3xl font-bold mb-6 text-primary border-b-2 border-secondary pb-2 inline-block">
+                            Select Service Type</h3>
                         <div class="grid grid-3 gap-4">
                             <label
                                 class="service-selection border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-secondary transition-colors text-center">
@@ -168,8 +168,9 @@
                     </div>
 
                     <!-- Contact Details -->
-                    <div class="mb-8">
-                        <h3 class="text-2xl font-semibold mb-4 text-primary">Contact Information</h3>
+                    <div class="mb-10">
+                        <h3 class="text-3xl font-bold mb-6 text-primary border-b-2 border-secondary pb-2 inline-block">
+                            Contact Information</h3>
                         <div class="grid grid-2 gap-6">
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
@@ -197,8 +198,9 @@
                     </div>
 
                     <!-- Service Details -->
-                    <div class="mb-8">
-                        <h3 class="text-2xl font-semibold mb-4 text-primary">Service Details</h3>
+                    <div class="mb-10">
+                        <h3 class="text-3xl font-bold mb-6 text-primary border-b-2 border-secondary pb-2 inline-block">
+                            Service Details</h3>
                         <div class="form-group">
                             <label for="description">Describe Your Issue *</label>
                             <textarea id="description" name="description" class="form-control" rows="4"
@@ -223,8 +225,9 @@
                     </div>
 
                     <!-- Vehicle Details (for automotive services) -->
-                    <div id="vehicleDetails" class="mb-8 hidden">
-                        <h3 class="text-2xl font-semibold mb-4 text-primary">Vehicle Information</h3>
+                    <div id="vehicleDetails" class="mb-10 hidden">
+                        <h3 class="text-3xl font-bold mb-6 text-primary border-b-2 border-secondary pb-2 inline-block">
+                            Vehicle Information</h3>
                         <div class="grid grid-2 gap-6">
                             <div class="form-group">
                                 <label for="make">Vehicle Make</label>

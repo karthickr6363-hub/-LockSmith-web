@@ -9,9 +9,7 @@
         content="Admin dashboard for managing locksmith bookings, technicians, service areas, reviews, and pricing.">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,10 +22,26 @@
 </head>
 
 <body>
+    <!-- Dashboard Mobile Header -->
+    <div class="dashboard-mobile-header">
+        <div class="dashboard-brand">
+            <i class="fas fa-lock"></i> LockSmith Pro
+        </div>
+        <button class="dashboard-toggle" id="dashboardToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
     <!-- Admin Dashboard Container -->
     <div class="admin-dashboard">
         <!-- Sidebar -->
-        <aside class="admin-sidebar">
+        <aside class="admin-sidebar" id="adminSidebar">
+            <div class="sidebar-close" id="sidebarClose">
+                <i class="fas fa-times"></i>
+            </div>
             <div class="text-center mb-8">
                 <div class="w-20 h-20 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
                     <i class="fas fa-user-shield text-3xl text-black"></i>
@@ -418,55 +432,6 @@
         </main>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div>
-                <h4 class="text-xl font-semibold mb-4 text-secondary">LockSmith Pro</h4>
-                <p>Your trusted 24/7 emergency locksmith service. Licensed, insured, and committed to your security.</p>
-                <div class="flex space-x-4 mt-4">
-                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-facebook text-xl"></i></a>
-                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
-                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
-                    <a href="#" class="text-white hover:text-secondary"><i class="fab fa-linkedin text-xl"></i></a>
-                </div>
-            </div>
-
-            <div>
-                <h4 class="text-xl font-semibold mb-4 text-secondary">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="services.html" class="text-white hover:text-secondary">Services</a></li>
-                    <li><a href="pricing.html" class="text-white hover:text-secondary">Pricing</a></li>
-                    <li><a href="areas.html" class="text-white hover:text-secondary">Service Areas</a></li>
-                    <li><a href="contact.html" class="text-white hover:text-secondary">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-xl font-semibold mb-4 text-secondary">Services</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-white hover:text-secondary">Emergency Lockout</a></li>
-                    <li><a href="#" class="text-white hover:text-secondary">Car Key Replacement</a></li>
-                    <li><a href="#" class="text-white hover:text-secondary">Smart Lock Installation</a></li>
-                    <li><a href="#" class="text-white hover:text-secondary">Lock Repair</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-xl font-semibold mb-4 text-secondary">Contact Info</h4>
-                <ul class="space-y-2">
-                    <li><i class="fas fa-phone text-secondary mr-2"></i> 1-800-LOCKSMITH</li>
-                    <li><i class="fas fa-envelope text-secondary mr-2"></i> info@locksmithpro.com</li>
-                    <li><i class="fas fa-clock text-secondary mr-2"></i> 24/7 Emergency Service</li>
-                    <li><i class="fas fa-map-marker-alt text-secondary mr-2"></i> Nationwide Service</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 LockSmith Pro. All rights reserved. | Licensed & Insured</p>
-        </div>
-    </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
