@@ -22,6 +22,9 @@
 </head>
 
 <body>
+
+
+
     <!-- Dashboard Mobile Header -->
     <div class="dashboard-mobile-header">
         <div class="dashboard-brand">
@@ -68,13 +71,13 @@
         <main class="admin-main-content">
             <!-- Overview Section -->
             <section id="overview" class="content-section">
-                <div class="flex justify-between items-center mb-6">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
                     <h1 class="text-3xl font-bold">Admin Dashboard</h1>
-                    <div class="flex gap-2">
-                        <button class="btn-primary">
+                    <div class="flex flex-wrap gap-2 w-full sm:w-auto">
+                        <button class="btn-primary flex-1 sm:flex-none">
                             <i class="fas fa-download"></i> Export Report
                         </button>
-                        <button class="btn-secondary">
+                        <button class="btn-secondary flex-1 sm:flex-none">
                             <i class="fas fa-sync"></i> Refresh
                         </button>
                     </div>
@@ -208,15 +211,15 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 overflow-x-auto">
                     <table class="w-full">
                         <thead>
                             <tr class="border-b">
-                                <th class="text-left py-3">Booking ID</th>
-                                <th class="text-left py-3">Customer</th>
-                                <th class="text-left py-3">Service</th>
-                                <th class="text-left py-3">Status</th>
-                                <th class="text-left py-3">Actions</th>
+                                <th class="text-left py-3 min-w-[100px]">Booking ID</th>
+                                <th class="text-left py-3 min-w-[150px]">Customer</th>
+                                <th class="text-left py-3 min-w-[150px]">Service</th>
+                                <th class="text-left py-3 min-w-[100px]">Status</th>
+                                <th class="text-left py-3 min-w-[150px]">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -354,7 +357,7 @@
 
                 <div class="space-y-4">
                     <div class="bg-white rounded-lg shadow-lg p-6">
-                        <div class="flex justify-between items-start">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
                             <div>
                                 <div class="flex items-center mb-2">
                                     <div class="rating">
@@ -365,17 +368,17 @@
                                         <i class="fas fa-star text-secondary"></i>
                                     </div>
                                     <span
-                                        class="ml-3 bg-secondary-light text-primary px-2 py-1 rounded text-sm">Pending</span>
+                                        class="ml-3 bg-secondary-light text-primary px-2 py-1 rounded text-xs">Pending</span>
                                 </div>
                                 <h3 class="font-semibold">John Doe</h3>
-                                <p class="text-gray-600 mb-2">Emergency Lockout Service</p>
+                                <p class="text-sm text-gray-500 mb-2">Emergency Lockout Service</p>
                                 <p class="mb-3">"Fast response time! Technician arrived within 20 minutes and got me
                                     back in my house quickly. Professional service!"</p>
-                                <p class="text-sm text-gray-500">Submitted 2 hours ago</p>
+                                <p class="text-xs text-gray-400">Submitted 2 hours ago</p>
                             </div>
-                            <div class="flex gap-2">
-                                <button class="btn-primary text-sm">Approve</button>
-                                <button class="btn-secondary text-sm">Reject</button>
+                            <div class="flex gap-2 w-full sm:w-auto">
+                                <button class="btn-primary text-xs flex-1 sm:flex-none">Approve</button>
+                                <button class="btn-secondary text-xs flex-1 sm:flex-none">Reject</button>
                             </div>
                         </div>
                     </div>
