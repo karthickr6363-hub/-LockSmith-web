@@ -51,10 +51,10 @@
 }
 
 /* Theme-specific Utility Overrides for Tailwind */
-[data-theme="dark"] section,
-[data-theme="dark"] .section,
-.dark section,
-.dark .section {
+[data-theme="dark"] section:not(.bg-secondary):not(.bg-red-600),
+[data-theme="dark"] .section:not(.bg-secondary):not(.bg-red-600),
+.dark section:not(.bg-secondary):not(.bg-red-600),
+.dark .section:not(.bg-secondary):not(.bg-red-600) {
     background-color: var(--background-color) !important;
 }
 
@@ -1437,6 +1437,15 @@ p {
 
     .hero h1 {
         font-size: 1.75rem !important;
+    }
+
+    .btn-lg,
+    .btn-emergency {
+        white-space: normal !important;
+        padding: 12px 20px !important;
+        font-size: 1rem !important;
+        word-break: break-word;
+        text-align: center;
     }
 }
 
