@@ -1222,7 +1222,7 @@ p {
     }
 
     .dropdown-menu {
-        position: absolute;
+        position: static;
         display: none;
         width: 100% !important;
         min-width: 100%;
@@ -1254,7 +1254,6 @@ p {
 
     .dropdown.active .dropdown-menu {
         display: block;
-        left: 100%;
     }
 
     .hero {

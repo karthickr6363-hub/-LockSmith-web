@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
     dropdownToggles.forEach(toggle => {
         toggle.addEventListener('click', function (e) {
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 1024) {
                 e.preventDefault();
                 const dropdown = this.parentElement;
 
