@@ -326,6 +326,10 @@ h6 {
     padding: 2rem 1rem;
 }
 
+.sidebar-close {
+    display: none;
+}
+
 .sidebar-nav {
     list-style: none;
 }
@@ -559,9 +563,8 @@ p {
     font-weight: 700;
     text-decoration: none;
     font-family: var(--font-secondary);
-    text-transform: uppercase;
     letter-spacing: 0.02em;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.75rem;
     line-height: normal;
@@ -1031,7 +1034,6 @@ p {
     font-weight: 700;
     text-decoration: none;
     font-family: var(--font-secondary);
-    text-transform: uppercase;
     letter-spacing: 0.02em;
     display: flex;
     align-items: center;

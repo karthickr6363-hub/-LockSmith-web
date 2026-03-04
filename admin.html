@@ -437,6 +437,35 @@
                     </table>
                 </div>
             </section>
+            <!-- Customers Section -->
+            <section id="customers" class="content-section hidden">
+                <div class="flex justify-between items-center mb-6">
+                    <h1 class="text-3xl font-bold">Customers</h1>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <p>Customer management dashboard will be available here.</p>
+                </div>
+            </section>
+
+            <!-- Reports Section -->
+            <section id="reports" class="content-section hidden">
+                <div class="flex justify-between items-center mb-6">
+                    <h1 class="text-3xl font-bold">Reports</h1>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <p>Analytics and reports details will be available here.</p>
+                </div>
+            </section>
+
+            <!-- Settings Section -->
+            <section id="settings" class="content-section hidden">
+                <div class="flex justify-between items-center mb-6">
+                    <h1 class="text-3xl font-bold">Settings</h1>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <p>Admin configuration and system preferences will be available here.</p>
+                </div>
+            </section>
         </main>
     </div>
 
@@ -455,18 +484,26 @@
             // Hide all content sections
             document.querySelectorAll('.content-section').forEach(section => {
                 section.style.display = 'none';
+                section.classList.add('hidden');
             });
 
             // Remove active class from all nav items
-            document.querySelectorAll('.sidebar-nav li').forEach(item => {
+            document.querySelectorAll('.sidebar-nav li a').forEach(item => {
                 item.classList.remove('active');
             });
 
             // Show selected section
-            document.getElementById(tabId).style.display = 'block';
+            const targetSection = document.getElementById(tabId);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+                targetSection.classList.remove('hidden');
+            }
 
             // Add active class to clicked nav item
-            event.target.classList.add('active');
+            const activeLink = document.querySelector(`.sidebar-nav li a[href="#${tabId}"]`) || document.querySelector(`.sidebar-nav li a[href="#overview"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
         }
 
         // Add click handlers to sidebar navigation
