@@ -440,30 +440,141 @@
             <!-- Customers Section -->
             <section id="customers" class="content-section hidden">
                 <div class="flex justify-between items-center mb-6">
-                    <h1 class="text-3xl font-bold">Customers</h1>
+                    <h1 class="text-3xl font-bold">Customer Management</h1>
+                    <div class="flex gap-2">
+                        <input type="text" placeholder="Search customers..." class="form-control">
+                        <button class="btn-primary">Search</button>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <p>Customer management dashboard will be available here.</p>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b">
+                                <th class="text-left py-3">Customer Name</th>
+                                <th class="text-left py-3">Email</th>
+                                <th class="text-left py-3">Total Bookings</th>
+                                <th class="text-left py-3">Last Service</th>
+                                <th class="text-left py-3">Status</th>
+                                <th class="text-left py-3">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 font-semibold">John Doe</td>
+                                <td class="py-3">john.doe@email.com</td>
+                                <td class="py-3">12</td>
+                                <td class="py-3">Dec 15, 2023</td>
+                                <td class="py-3"><span
+                                        class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Active</span></td>
+                                <td class="py-3">
+                                    <button class="text-blue-500 hover:text-blue-700 mr-2">History</button>
+                                    <button class="text-gray-500 hover:text-gray-700">Edit</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 font-semibold">Sarah Smith</td>
+                                <td class="py-3">sarah.s@gmail.com</td>
+                                <td class="py-3">1</td>
+                                <td class="py-3">Today</td>
+                                <td class="py-3"><span
+                                        class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">New</span></td>
+                                <td class="py-3">
+                                    <button class="text-blue-500 hover:text-blue-700 mr-2">History</button>
+                                    <button class="text-gray-500 hover:text-gray-700">Edit</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
 
             <!-- Reports Section -->
             <section id="reports" class="content-section hidden">
                 <div class="flex justify-between items-center mb-6">
-                    <h1 class="text-3xl font-bold">Reports</h1>
+                    <h1 class="text-3xl font-bold">Business Intelligence Reports</h1>
+                    <button class="btn-primary"><i class="fas fa-file-pdf mr-2"></i> Download Full Report</button>
                 </div>
+
+                <div class="grid grid-3 gap-6 mb-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
+                        <h3 class="text-gray-500 text-sm font-semibold uppercase">Avg Ticket Value</h3>
+                        <p class="text-2xl font-bold mt-2">$145.20</p>
+                        <p class="text-green-500 text-sm mt-1">↑ 2.4% vs last mo</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-secondary">
+                        <h3 class="text-gray-500 text-sm font-semibold uppercase">Cancellation Rate</h3>
+                        <p class="text-2xl font-bold mt-2">1.8%</p>
+                        <p class="text-red-500 text-sm mt-1">↓ 0.5% vs last mo</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-500">
+                        <h3 class="text-gray-500 text-sm font-semibold uppercase">Customer Retention</h3>
+                        <p class="text-2xl font-bold mt-2">84%</p>
+                        <p class="text-green-500 text-sm mt-1">Stable</p>
+                    </div>
+                </div>
+
                 <div class="bg-white rounded-lg shadow-lg p-6">
-                    <p>Analytics and reports details will be available here.</p>
+                    <h2 class="text-xl font-bold mb-4">Revenue by Service Distribution</h2>
+                    <div
+                        class="h-64 bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
+                        <p class="text-gray-500"><i class="fas fa-chart-pie mr-2"></i> [Interactive Chart Placeholder:
+                            Revenue Distribution]</p>
+                    </div>
                 </div>
             </section>
 
             <!-- Settings Section -->
             <section id="settings" class="content-section hidden">
                 <div class="flex justify-between items-center mb-6">
-                    <h1 class="text-3xl font-bold">Settings</h1>
+                    <h1 class="text-3xl font-bold">System Settings</h1>
                 </div>
+
                 <div class="bg-white rounded-lg shadow-lg p-6">
-                    <p>Admin configuration and system preferences will be available here.</p>
+                    <div class="grid grid-2 gap-8">
+                        <div>
+                            <h2 class="text-xl font-bold mb-4">General Configuration</h2>
+                            <div class="space-y-4">
+                                <div class="form-group">
+                                    <label>Business Name</label>
+                                    <input type="text" class="form-control" value="LockSmith Pro">
+                                </div>
+                                <div class="form-group">
+                                    <label>Support Email</label>
+                                    <input type="email" class="form-control" value="support@locksmithpro.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Base Call-out Fee ($)</label>
+                                    <input type="number" class="form-control" value="89">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold mb-4">Appearance & Notifications</h2>
+                            <div class="space-y-4">
+                                <div class="form-group">
+                                    <label>Default Theme</label>
+                                    <select class="form-control">
+                                        <option>System Default</option>
+                                        <option>Light Theme</option>
+                                        <option>Dark Theme</option>
+                                    </select>
+                                </div>
+                                <div class="flex items-center gap-2 mt-4">
+                                    <input type="checkbox" id="emailNotifications" checked>
+                                    <label for="emailNotifications" class="mb-0">Enable Admin Email Alerts</label>
+                                </div>
+                                <div class="flex items-center gap-2 mt-2">
+                                    <input type="checkbox" id="smsAlerts" checked>
+                                    <label for="smsAlerts" class="mb-0">Enable SMS Dispatch Confirmations</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-top flex gap-4">
+                        <button class="btn-primary">Save Settings</button>
+                        <button class="btn-secondary">Reset to Defaults</button>
+                    </div>
                 </div>
             </section>
         </main>
@@ -500,18 +611,25 @@
             }
 
             // Add active class to clicked nav item
-            const activeLink = document.querySelector(`.sidebar-nav li a[href="#${tabId}"]`) || document.querySelector(`.sidebar-nav li a[href="#overview"]`);
+            const activeLink = document.querySelector(`.sidebar-nav li a[href="#${tabId}"]`);
             if (activeLink) {
                 activeLink.classList.add('active');
             }
         }
 
+        // Initialize with hash or default to overview
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.substring(1);
+            showTab(hash || 'overview');
+        });
+
         // Add click handlers to sidebar navigation
         document.querySelectorAll('.sidebar-nav a').forEach(link => {
             link.addEventListener('click', function (e) {
-                e.preventDefault();
                 const href = this.getAttribute('href');
                 if (href.startsWith('#')) {
+                    e.preventDefault();
+                    history.pushState(null, null, href);
                     showTab(href.substring(1));
                 }
             });
